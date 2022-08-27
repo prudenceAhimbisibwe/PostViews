@@ -33,9 +33,7 @@ class MainActivity : AppCompatActivity() {
                     binding.rvPost.layoutManager= LinearLayoutManager(baseContext)
                     binding.rvPost.adapter=PostRvAdapter
                 }
-
             }
-
             override fun onFailure(call: Call<List<Post>>, t: Throwable) {
             }
         })
